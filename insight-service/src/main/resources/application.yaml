@@ -1,0 +1,18 @@
+server:
+#  special for AI
+  port: 9090
+
+spring:
+  ai:
+    ollama:
+      chat:
+        options:
+          model: deepseek-coder
+      init:
+        pull-model-strategy: always
+  application:
+    name: insight-service
+
+usage:
+  service:
+    url: http://localhost:8083/api/v1/usage
